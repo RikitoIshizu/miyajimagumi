@@ -1,0 +1,394 @@
+@charset "UTF-8";
+
+/*---Reset---*/
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+html {
+}
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+/*クラス定義*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-table;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix{height: 1%;}
+*+html .clearfix{min-height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*以下ページデザイン*/
+#eye_catch {
+	width: 100%;
+	height: 100vh;
+	top: calc(50% - 100px);
+	background-size: 120%;
+	background-position: center center;
+}
+
+#catch_copy1 {
+	width: 100%;
+	height: 100vh;
+	left: 0;
+	background-image: url("../img/main1.jpg");
+	background-size: 120%;
+}
+
+#catch_copy1 p {
+	font-size: 80px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	line-height: 100vh;
+}
+
+#catch_copy2 {
+	width: 100%;
+	height: 100vh;
+	left: 0;
+	background-image: url("../img/main2.jpg");
+	background-size: 120%;
+	display: none;
+}
+
+#catch_copy2 p {
+	font-size: 80px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	line-height: 100vh;
+}
+
+#opening {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	background-image: url("../img/main3_left.png"), url("../img/main3_right.png");
+	background-position: left top, right bottom;
+	background-repeat: no-repeat;
+	background-size: auto 100%, auto 100%;
+	display: none;
+}
+
+#opening .logo {
+	width: 25%;
+	position: absolute;
+	left: 37.5%;
+	top: 40%;
+}
+
+
+#header {
+	width: 100%;
+	height: 90px;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-bottom: 1px solid #aaa;
+	padding: 5px 50px;
+	position: fixed;
+	top 0;
+	left 0;
+	z-index: 9000;
+	display: none;
+}
+
+#header_img {
+	width: 150px;
+	height: 80px;
+	float: left;
+	clear: both;
+}
+
+#header ul {
+	padding-top: 40px;
+	list-style: none;
+	overflow: hidden;
+	float: right;
+}
+
+#header ul li {
+	width: 100px;
+	line-height: 30px;
+	text-align: center;
+	float: left;
+}
+
+#header ul li a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	clear: both;
+}
+
+#work {
+	background-image: url("../img/work_bg.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 1920px auto;
+	padding: 200px 0 100px 0;
+	background-position: center center;
+	clear: both;
+}
+
+#description {
+	width: 50%;
+	float: right;
+	clear: both;
+}
+
+#description p.index {
+	font-size: 24px;
+	line-height: 50px;
+}
+
+#description p {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+
+#area {
+	clear: both;
+	width: 100%;
+	padding: 100px 0 200px 0;
+}
+
+#area p.index {
+	font-size: 36px;
+	line-height: 60px;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+}
+
+.pict1 {
+	position: absolute;
+	z-index: 1;
+	top: 1480px;
+	left: 740px;
+	width: 80px;
+}
+
+.w100 {
+	width: 100%;
+}
+
+.w60 {
+	width: 60%;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+#recruite {
+	background-image: url("../img/recruite_bg.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 1920px;
+	padding: 200px 0 100px 0;
+	background-attachment: center center;
+}
+
+#recruite p.index {
+	color: #fff;
+	font-size: 36px;
+	line-height: 60px;
+	margin-bottom: 40px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#recruite p.sub_index {
+	color: #fff;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	margin: 0 auto;
+	width: 200px;
+	text-align: center;
+}
+
+#recruite #box_area {
+	width: 640px;
+	margin: 20px auto;
+}
+
+#recruite .box {
+	width: 300px;
+	height: 300px;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	float: left;
+}
+
+#box_area p {
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 25px;
+}
+
+#recruite .box2{
+	clear: both;
+	width: 620px;
+	height: 150px;
+	border-radius: 10px;
+	margin: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	float: left;
+}
+
+#recruite .box2 .detail {
+	width: 50%;
+	float: left;
+}
+
+#company {
+	padding: 200px 0 100px 0;
+	position: relative;
+}
+
+#company p.index {
+	text-align: center;
+	font-size: 36px;
+	line-height: 60px;
+	font-weight: bold;
+	padding: 20px 0;
+	float: center;
+}
+
+.pict2 {
+	position: absolute;
+	z-index: 1;
+	top: 250px;
+	left: 270px;
+	width: 80px;
+}
+
+#company table {
+	width: 700px;
+	margin: 0 auto;
+}
+
+#company table tr {
+	height: 40px;
+}
+
+#company table tr th {
+	text-align: center;
+	width: 180px;
+}
+
+#company table tr td {
+	padding-left: 20px;
+}
+
+#contact {
+	padding: 200px 0 100px;
+	position: relative;
+}
+
+#contact p.index {
+	text-align: center;
+	font-size: 36px;
+	line-height: 60px;
+	font-weight: bold;
+	padding: 20px 0;
+}
+
+.pict3 {
+	position: absolute;
+	width: 80px;
+	top: 170px;
+	left: 760px;
+}
+
+#flip {
+	height: 460px;
+}
+
+#contact table {
+	width: 700px;
+	margin: 0 auto;
+}
+
+#contact table tr {
+	height: 30px;
+}
+
+#contact table tr th {
+	text-align: center;
+	width: 180px;
+}
+#contact table tr td {
+	padding-left: 20px;
+	height: 40px;
+}
+
+#contact table tr td textarea {
+	width: 90%;
+	height: 150px;
+	padding: 10px 20px;
+	resize: none;
+}
+
+#contact input[type=text] {
+	line-height: auto;
+	vertical-align: middle;
+	width: 90%;
+	height: 20px;
+}
+
+#contact textarea {
+	font-size: 100%;
+	vertical-align: middle;
+}
+
+#contact #send {
+	width: 160px;
+	margin: 50px auto 0 auto;
+	cursor: pointer;
+}
